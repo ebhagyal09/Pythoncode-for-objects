@@ -10,4 +10,4 @@ def safeget(dct, mykey):
             return  None
         return dct
     dct = {'x':{'y':{'z'}}}
-    print(safeget(dct,'x/y'))
+    print(safeget(dct,'x/y/z'))
