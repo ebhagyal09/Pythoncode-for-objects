@@ -8,6 +8,6 @@ def safeget(dct, mykey):
             dct = dct[key]
         except keyerror:
             return  None
-        return dct
-    dct = {'x':{'y':{'z'}}}
-    print(safeget(dct,'x/y/z'))
+    return dct
+dct = {'x':{'y':{'z':"a"}}}
+print(safeget(dct,'x/y/z'))
